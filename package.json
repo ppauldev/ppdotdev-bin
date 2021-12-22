@@ -1,0 +1,20 @@
+{
+  "name": "ppdotdev-bin",
+  "version": "1.0.0",
+  "description": "Blog related code snippets",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phpaul89/ppdotdev-bin.git"
+  },
+  "author": "Phillip Paul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phpaul89/ppdotdev-bin/issues"
+  },
+  "homepage": "https://github.com/phpaul89/ppdotdev-bin#readme"
+}
