@@ -26,5 +26,5 @@ export const concat_v5 = (len) => {
 }
 
 export const concat_v6 = (len) => {
-  return [...Array(len + 1).keys()].slice(1)
+  return [...Array(len + 1).keys()].slice(1).join(",")
 }
