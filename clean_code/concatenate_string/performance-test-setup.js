@@ -1,11 +1,11 @@
 import { performance, PerformanceObserver } from "perf_hooks"
 import {
-  concat_v1,
-  concat_v2,
-  concat_v3,
-  concat_v4,
-  concat_v5,
-  concat_v6
+  concat_solution_1,
+  concat_solution_2,
+  concat_solution_3,
+  concat_solution_4,
+  concat_solution_5,
+  concat_solution_6
 } from "./string-concat.js"
 
 const average = (list) => list.reduce((prev, curr) => prev + curr) / list.length
@@ -32,33 +32,33 @@ const obs = new PerformanceObserver((list, observer) => {
 obs.observe({ entryTypes: ['measure'], buffered: true });
 
 const measureDurations = () => {
-  performance.measure("concat_v1", "start", "v1")
-  performance.measure("concat_v2", "v1", "v2")
-  performance.measure("concat_v3", "v2", "v3")
-  performance.measure("concat_v4", "v3", "v4")
-  performance.measure("concat_v5", "v4", "v5")
-  performance.measure("concat_v6", "v5", "v6")
+  performance.measure("concat_solution_1", "start", "v1")
+  performance.measure("concat_solution_2", "v1", "v2")
+  performance.measure("concat_solution_3", "v2", "v3")
+  performance.measure("concat_solution_4", "v3", "v4")
+  performance.measure("concat_solution_5", "v4", "v5")
+  performance.measure("concat_solution_6", "v5", "v6")
 }
 
 const concatPerformance = (len) => {
   performance.mark("start")
 
-  concat_v1(len)
+  concat_solution_1(len)
   performance.mark("v1")
 
-  concat_v2(len)
+  concat_solution_2(len)
   performance.mark("v2")
 
-  concat_v3(len)
+  concat_solution_3(len)
   performance.mark("v3")
 
-  concat_v4(len)
+  concat_solution_4(len)
   performance.mark("v4")
 
-  concat_v5(len)
+  concat_solution_5(len)
   performance.mark("v5")
 
-  concat_v6(len)
+  concat_solution_6(len)
   performance.mark("v6")
 
   measureDurations()
