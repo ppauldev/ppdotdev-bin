@@ -134,6 +134,8 @@ const scrapeBingResults = async () => {
     await goToNextPage(page)
   }
 
+  console.log(searchResults, searchResults.length)
+
   performance.mark(step6)
 
   await shutdown(browser)
